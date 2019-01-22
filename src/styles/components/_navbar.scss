@@ -1,0 +1,33 @@
+.navi {
+  background: $color-primary;
+  padding: 1.5rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__items {
+    list-style: none;
+  }
+
+  &__item {
+    :not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__brand {
+    font-size: 2rem;
+  }
+
+  &__link {
+
+    &:link,
+    &:visited {
+      color: $color-light-grey-1;
+      text-decoration: none;
+    }
+  }
+}

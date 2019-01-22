@@ -1,0 +1,83 @@
+.button {
+  &,
+  &:link,
+  &:visited {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    font-size: $default-font-size;
+    text-decoration: none;
+    border-radius: 10rem;
+    transition: all .2s;
+    text-transform: uppercase;
+    
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    box-shadow: $medium-shadow;
+    transform: translateY(-3px);
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: $small-shadow;
+    transform: translateY(-2px);
+    outline: none;
+  }
+
+  &--primary {
+    background: $color-primary;
+
+    &,
+    &:hover {
+      color: $color-white;
+    }
+
+    &-outline {
+      background: none;
+      border: 2px solid $color-primary !important;
+      color: $color-primary;
+    }
+  }
+
+  &__icon {
+    margin-left: .8rem;
+  }
+}
+
+.button-link {
+
+  &:link,
+  &:visited {
+    cursor: pointer;
+    color: $color-primary;
+    border: none;
+    border-bottom: 1px solid $color-primary;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    padding: 1.5rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.button-secondary {
+  &,
+  &:link,
+  &:visited {
+    border-left: 3px solid $color-primary;
+    color: $color-primary;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &--active:link,
+  &--active:visited {
+    font-weight: bold;
+  }
+}

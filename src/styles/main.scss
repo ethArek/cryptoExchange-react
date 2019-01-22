@@ -1,0 +1,19 @@
+@import "./abstracts/variables";
+@import "./abstracts/fonts";
+@import "./abstracts/animations";
+@import "./abstracts/utils";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import './components/buttons';
+@import './components/inputs';
+@import './components/navbar';
+@import './components/react-modal';
+
+@import "./pages/dashboard-page";
+@import "./pages/landing-page";
+@import "./pages/login-page";
+@import "./pages/trade-page";
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');

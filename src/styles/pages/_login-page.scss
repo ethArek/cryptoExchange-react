@@ -1,0 +1,37 @@
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45rem;
+  // animation-name: opacity;
+  // animation-duration: 1s;
+
+  &__header {
+    animation-name: moveDown;
+    animation-duration: 1s;
+  }
+
+  &__box {
+    margin-top: 2rem;
+    text-align: center;
+    animation-name: moveUp;
+    animation-duration: 1s;
+  }
+
+  &__group {
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+}

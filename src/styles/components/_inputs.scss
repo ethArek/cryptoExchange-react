@@ -1,0 +1,23 @@
+.input {
+  box-sizing: border-box;
+  box-shadow: $tiny-shadow;
+  border-radius: 5px;
+  color: $color-primary;
+  font-size: inherit;
+  font-family: inherit;
+  width: 100%;
+  border: 1px solid $color-dark-grey-3;
+  padding: 1.5rem 2rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-primary;
+  }
+
+  &__disabled {
+    background: $color-light-grey-2;
+  }
+}
